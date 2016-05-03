@@ -35,3 +35,12 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
 au         BufNewFile *.py,*.pyw set fileformat=unix
 au BufRead,BufNewFile *.py,*.pyw let b:comment_leader = '#'
+
+" powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
+
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
